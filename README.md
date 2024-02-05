@@ -34,9 +34,9 @@ Begin het verslag met:
 
 - Lees de hele opdracht goed door, stel alvast vragen als iets niet duidelijk is
 - Voor ieder deel / vraag:
-      -  Vermeld het nummer van het deel of de vraag;
-      -  Maak de opdracht en/of beantwoord de vraag;
-      -  Kies code snippets en/of screenshots om je oplossing te laten zien;
-      -  Beschrijf je oplossing beknopt, waarbij je vooral duidelijk maakt hoe je het hebt aangepakt.
+  -  Vermeld het nummer van het deel of de vraag;
+  -  Maak de opdracht en/of beantwoord de vraag;
+  -  Kies code snippets en/of screenshots om je oplossing te laten zien;
+  -  Beschrijf je oplossing beknopt, waarbij je vooral duidelijk maakt hoe je het hebt aangepakt.
 
 Bewaar / exporteer je verslag als PDF en lever die in.
