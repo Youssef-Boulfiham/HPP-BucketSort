@@ -16,7 +16,8 @@ Bucket Sort begint met een een-dimensionale array van n nummers die gesorteerd w
 ## Opdracht
 
 1. Schrijf een implementatie in C++ van het bovenstaande Bucket Sort algoritme voor het sorteren van gehele getallen
-2. Bepaal, net als eerder, op basis van een test, de Big O waarde van Bucket Sort.
+2. Bepaal op basis van een timing test, de Big O waarde van Bucket Sort. Exporteer hiervoor timing data uit je C++ code, en gebruik Python om de resultaten te visualiseren.
+   Op Canvas staat voorbeeld-code waarin Bubble-sort getest wordt op een aantal lijsten van n random waardes en worden de resultaten als CSV geprint.
 3. Benader (beredeneer) zo precies mogelijk de tijdscomplexiteit van je algoritme zoals we dit in OAI hebben gezien.
 4. Extra: Maak je BucketSort implementatie ook geschikt voor het sorteren van getallen met cijfers achter de komma
 5. Extra: Laat bij je analyse zien dat je onderzoek hebt gedaan over wat wel en niet mee te nemen in je analyse (is een variable assignment een stap? hoeveel ruimte kost je datastructuur?)
