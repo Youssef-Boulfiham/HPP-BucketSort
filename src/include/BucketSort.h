@@ -7,32 +7,39 @@
 
 using namespace std;
 
+// struct Buckets {
+// vector<vector<int>> Positive{10};
+// vector<vector<int>> Negative{10};
+// };
+// struct DigitsCounts {
+// int positive = 0;
+// int negative = 0;
+// };
 
-class BucketSort : public Server {
+class BucketSort : public Server
+{
 public:
-    explicit BucketSort(string task);
+    explicit BucketSort(string task, vector<int> listInput);
 
     string taskName;
-    vector<int> listSorted;
-    vector<int> listUnsorted;
-    int digitsNegativeCount;
-    struct Buckets {
-        vector<vector<int>> bucketsPositive;
-        vector<vector<int>> bucketsNegative;
-    };
+    vector<int> listInput;
+    vector<int> listOutput;
+    vector<int> listTemp;
+    vector<vector<int>> bucketsEmpty{19};
+    vector<vector<int>> buckets;
 
-    void run(vector<int> listUnsorted);
+    int DigitsCounts;
 
-    Buckets distributionPass(vector<int> listUnsorted, int digitsIndex);
+    void setDigitsCounts(const vector<int> &listTemp);
 
-    vector<int> gatheringPass(Buckets buckets);
+    void getDistributionPass(vector<int> listTemp, int digitsIndex);
 
-    int getPositiveDigitsCount(const vector<int> &listUnsorted);
+    void gatheringPass(vector<vector<int>> buckets);
 
-    bool getDigitsNegativeCount(vector<int> listUnsorted);
-
+    void run();
+    
+    string gettMessageToParentClass();
     friend ostream &operator<<(ostream &os, BucketSort &BucketSort);
-
 };
 
 #endif // BUCKET_SORT_H

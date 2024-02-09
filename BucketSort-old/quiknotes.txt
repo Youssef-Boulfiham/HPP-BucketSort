@@ -325,3 +325,26 @@ void BucketSort::run(std::vector<int> inputList) {
             if (valueString.size() < digitsCount) {
                 bucketsPositive[0].push_back(value);
             }
+
+#######################################################################################################################
+// void BucketSort::setDigitsCounts(const std::vector<int> &list)
+// {
+//     // bepaal hoogste en laagste waarde
+//     int highest = 0;
+//     int lowest = 0;
+//     for (int i : list)
+//     {
+//         highest = max(highest, i);
+//         lowest = min(lowest, i);
+//     }
+//     // definieer aantal digits
+//     if (highest != 0)
+//     {
+//         digitsCounts.positive = to_string(highest).length();
+//     }
+//     if (lowest != 0)
+//     {
+//         digitsCounts.negative = to_string(lowest).length() - 1;
+//     }
+//     cout << highest << " " << lowest << endl;
+// }

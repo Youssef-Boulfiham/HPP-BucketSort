@@ -39,7 +39,6 @@ int main() {
         steady_clock::time_point begin = steady_clock::now();
 
         // Do the thing!
-        std::cout << vec[2] << " " << vec[1] << std::endl;
         sort(vec);
 
         // Stop timing
@@ -48,7 +47,7 @@ int main() {
         // Calculate and print time
         int time_ms = duration_cast<microseconds>(end - begin).count();
 
-        std::cout << n << ", " << time_ms << std::endl;
+        std::cout << n << ", " << time_ms <<  ", " << vec.size() << std::endl;
     }
 
     return 0;
